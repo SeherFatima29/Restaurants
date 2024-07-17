@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+}
+.menu-bar{
+    background-color: rgb(216, 220, 222);
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+img.logo{
+    width: 5%;
+    cursor: pointer;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+}
+.menu-bar ul li{
+padding: 10px 30px;
+position: relative;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+.menu-bar ul li a:hover{
+    text-decoration:underline;
+}
+.menu-bar ul li:hover .drop-down-menu {
+    display: block;
+    position:absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgb(216, 220, 222);
+
+}
+.drop-down-menu{
+    display: none;
+}
+.drop-down-menu ul{
+    display: block;
+    margin: 10px;
+}
+.drop-down-menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1),rgba(0,0,0,0.2)) ,url(pexels-photo-1640774.jpeg);
+    height: 100vh;
+    background-size: cover;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin: 20px auto;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.btn :hover{
+    background-color: transparent;
+    color: #000;
+}
+.content button{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #000;
+    font-size: 20px;
+font-weight: 600;
+cursor: pointer;
+background-color: #000;
+color: white;
+}
+/* .section-c{
+    background-color:rgb(18, 18, 39);
+    height: 400vh;
+    background-size: cover;
+} */
+.flex-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-1 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 100px;
+    font-size: 30px;
+    margin-left: 140px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-1 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-2 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 140px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-2 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-3 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 110px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-3 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-4 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 110px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-4 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-5 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 140px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-5 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-6 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 100px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-6 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-7 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 110px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-7 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.btn-8 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 140px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(223, 10, 81);
+    text-decoration-thickness: 3px;
+}
+.btn-8 img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.details{
+    background-color: rgb(115, 165, 177);
+    height: 150vh;
+    margin-top: 20%;
+}
+.detail{
+    display: flex;
+}
+.detail-restu :hover{
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:rgb(205, 54, 79);
+}
+.detail-restu h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 60%;
+    margin-left: 60px;
+}
+.chef-img img{
+    margin-left: 90px;
+    width: 540px;
+}
+.chef-name :hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(205, 54, 79);
+    color: #000;
+    cursor: grab;
+}
+.chef-name{
+    color: white;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-left: 60%;
+}
+section.section-d{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(cake.jpg);
+    height: 130vh;
+    background-size: cover;
+}
+.footer h2{
+    color: white;
+    padding-top: 20%;
+    font-size: 30px;
+    text-align: center;
+    font-family: "arial";
+    font-weight: 600;
+    letter-spacing:5px;
+}
+.footer p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    line-height: 30px;
+}
+img.png{
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 40%;
+    cursor:pointer;
+}
+.footer h1{
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img.order{
+    width: 15%;
+    margin-left: 42%;
+    cursor: pointer;
+}
+.footer-header{
+background-color:rgb(115, 165, 177);
+height: 750px;
+}
+img.gif{
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+.longer{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+.bigger-list{
+    width: 300px;
+margin-left: 90px;
+line-height: 50px;
+margin-top: 50px;
+font-size: 18px;
+color: white;
+font-family: "arial";
+}
+b{
+    font-family: "arial";
+    font-weight: bold;
+    color: #000;
+font-size: 25px;
+}
